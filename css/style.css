@@ -1,0 +1,70 @@
+@import url(main.css);
+@import url(normalize.css);
+@import url(outline.css);
+
+
+@font-face {
+  font-family: "Roboto";
+  src:
+  url("../fonts/roboto-light-webfont.woff2") format("woff2"),
+  url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 65px;
+}
+
+.header a {
+  text-decoration: none;
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.header__left {
+  padding: 0px 45px;
+}
+
+.header__center {
+  padding: 0px 45px;
+}
+
+.header__right {
+  padding: 0px 45px;
+}
+
+.header__search {
+  padding: 0px 12.5px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list {
+  list-style-type: none;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.menu__item {
+  margin-right: 10px;
+}
+
+.header__logo {
+  max-width: 370px;
+}
+
+
