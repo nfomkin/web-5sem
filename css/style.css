@@ -1,6 +1,6 @@
 @import url(main.css);
 @import url(normalize.css);
-@import url(outline.css);
+/*@import url(outline.css);*/
 
 
 @font-face {
@@ -18,53 +18,100 @@
   overflow: hidden;
 }
 
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 12px 65px;
-}
-
+/*HEADER*/
 .header a {
   text-decoration: none;
-  font-family: "Roboto-Light", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 15px;
   color: black;
 }
 
-.header__left {
-  padding: 0px 45px;
+.search-svg {
+  width: 20px;
+  height: 20px;
 }
 
-.header__center {
-  padding: 0px 45px;
+.basket-svg {
+  width: 20px;
+  height: 20px;
 }
 
-.header__right {
-  padding: 0px 45px;
+.burger-menu-svg {
+  width: 20px;
+  height: 20px;
 }
 
-.header__search {
-  padding: 0px 12.5px;
-}
-
-.header__menu {
+.header__row {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.menu__list {
-  list-style-type: none;
-  display:flex;
-  justify-content: flex-start;
+@media screen and (min-width: 320px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header__left {
+    display: none;
+  }
+
+  .header__right {
+    display: none;
+  }
+
+  .header__mobile-box {
+    display: flex;
+  }
+
+  .header__logo {
+    padding: 0 12.5px;
+  }
+
+  .header__logo-img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+  }
+
+  .mobile-box__search-svg {
+    padding: 0 12.5px;
+  }
+
+  .mobile-box__basket-svg {
+    padding: 0 12.5px;
+  }
+
+  .header__burger-menu {
+    padding: 0 12.5px;
+  }
+
+
+
+  .menu__list {
+    list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    justify-content: flex-start;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  .menu__item {
+    margin-right: 30px;
+  }
 }
 
-.menu__item {
-  margin-right: 10px;
-}
 
-.header__logo {
-  max-width: 370px;
+/*-------------------------------------------------------------------*/
+
+.main__bg {
+  background-image: url("../img/main_img.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 880px;
 }
 
 
