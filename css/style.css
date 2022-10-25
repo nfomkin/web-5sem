@@ -1,70 +1,125 @@
 @import url(main.css);
 @import url(normalize.css);
-@import url(outline.css);
+@import url(header.css);
+/*@import url(outline.css);*/
 
+:root {
+    --menu__menu-letter-spacing: .25em;
+    --menu__menu-color: rgba(48, 48, 48, 1);
+    --paragraph-font-size-small-screen: 16px;
+    --paragraph-font-size-big-screen: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 @font-face {
-  font-family: "Roboto";
-  src:
-  url("../fonts/roboto-light-webfont.woff2") format("woff2"),
-  url("../fonts/roboto-light-webfont.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Roboto";
+    src: url("../fonts/roboto-light-webfont.woff2") format("woff2"),
+    url("../fonts/roboto-light-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .wrapper {
-  min-height: 100%;
-  overflow: hidden;
+    min-height: 100%;
+    overflow: hidden;
 }
 
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 12px 65px;
+.hero__bg {
+    background-image: url("../img/main_img.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.header a {
-  text-decoration: none;
-  font-family: "Roboto-Light", sans-serif;
-  font-size: 15px;
-  color: black;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.header__left {
-  padding: 0px 45px;
+.quote__text {
+    text-align: center;
 }
 
-.header__center {
-  padding: 0px 45px;
+
+.hello__container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.header__right {
-  padding: 0px 45px;
+.hello__left {
+    width: 45%;
+    padding: 0 10px;
 }
 
-.header__search {
-  padding: 0px 12.5px;
+.hello__right {
+    width: 55%;
+    padding: 0 10px;
 }
 
-.header__menu {
-  display: flex;
-  align-items: center;
+.hello__video {
+    aspect-ratio: 16 / 9;
 }
 
-.menu__list {
-  list-style-type: none;
-  display:flex;
-  justify-content: flex-start;
+.hello__video iframe{
+    width: 100%;
+    height: 100%;
 }
 
-.menu__item {
-  margin-right: 10px;
+.hello__phone {
+    text-align: center;
 }
 
-.header__logo {
-  max-width: 370px;
+.hello__phone-link {
+    text-decoration: none;
+    color: black;
 }
 
+
+.hello__email {
+    text-align: center;
+}
+.hello__title {
+    text-align: center;
+}
+
+.hello__paragraph {
+    text-align: center;
+}
+
+.telegram-text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.telegram-img {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 426px){
+    .hello__left {
+        width: 100%;
+    }
+
+    .hello__right {
+        width: 100%;
+    }
+
+}
 

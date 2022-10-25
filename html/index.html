@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__left left">
+                <nav class="left__menu-desktop menu">
+                    <a class="header__search-link header__icon-link link-reset">
+                        <svg class="header__icon">
+                            <use xlink:href="../img/sprite.svg#search"></use>
+                        </svg>
+                    </a>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link link-reset" href="#">Магазин</a></li>
+                        <li class="menu__item"><a class="menu__link link-reset" href="#">Отзывы</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__logo">
+                <a class="header__logo-link" href="#"><img src="../img/logo.png" alt="Grossone"></a>
+            </div>
+
+            <div class="header__mobile-box mobile-box">
+                <a class="header__search-link header__icon-link">
+                    <svg class="header__icon">
+                        <use xlink:href="../img/sprite.svg#search"></use>
+                    </svg>
+                </a>
+                <a class="header__basket-link header__icon-link">
+                    <svg class="header__icon">
+                        <use xlink:href="../img/sprite.svg#basket"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="header__right right">
+                <nav class="right__menu-desktop menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link link-reset" href="#">Информация</a></li>
+                        <li class="menu__item"><a class="menu__link link-reset" href="#">Блог</a></li>
+                    </ul>
+                    <a class="header__basket-link header__icon-link link-reset">
+                        <svg class="header__icon">
+                            <use xlink:href="../img/sprite.svg#basket"></use>
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+
+            <div class="header__burger">
+                <a class="header__icon-link" id="burger-menu">
+                    <svg class="header__icon">
+                        <use xlink:href="../img/sprite.svg#menu"></use>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="opened-burger-menu">
+        <div class="opened-burger-menu__container">
+            <div class="menu__top">
+                <div class="menu__actions">
+                    <a class="header__search-link header__icon-link">
+                        <svg class="header__icon">
+                            <use xlink:href="../img/sprite.svg#search"></use>
+                        </svg>
+                    </a>
+                    <a class="header__basket-link header__icon-link">
+                        <svg class="header__icon">
+                            <use xlink:href="../img/sprite.svg#basket"></use>
+                        </svg>
+                    </a>
+                </div>
+                <span class="menu__close">
+                          <svg class="header__icon">
+                            <use xlink:href="../img/sprite.svg#cross"></use>
+                          </svg>
+                        </span>
+            </div>
+            <nav class="vertical-menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#">Магазин</a></li>
+                    <li class="menu__item"><a href="">Отзывы</a></li>
+                    <li class="menu__item"><a href="">Информация</a></li>
+                    <li class="menu__item"><a href="">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <header class="header-alternative">
+        <div class="header-alternative__container">
+            <div class="header-alternative__body">
+                <nav class="header-alternative__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">Магазин</li>
+                        <li class="menu__item">Отзывы</li>
+                        <li class="menu__item">Информация</li>
+                        <li class="menu__item">Блог</li>
+                    </ul>
+                </nav>
+                <div class="header-alternative__actions">
+                    <a class="header__search-link header__icon-link">
+                        <svg class="header__icon">
+                            <use xlink:href="../img/sprite.svg#search"></use>
+                        </svg>
+                    </a>
+                    <a class="header__basket-link header__icon-link">
+                        <svg class="header__icon">
+                            <use xlink:href="../img/sprite.svg#basket"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__bg"></div>
+    </section>
+
+    <div class="quote">
+        <div class="container">
+            <p class="quote__text">
+                &laquo;Качество&nbsp;&mdash; это делать что-либо правильно, даже когда никто не&nbsp;смотрит.&raquo;
+                &mdash;
+                <span class="quote__author">Генри Форд</span>
+            </p>
+            <hr>
+        </div>
+    </div>
+
+    <div class="hello">
+        <div class="hello__container container">
+            <div class="hello__left">
+                <div class="hello__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/n9uCgUzfeRQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <p class="hello__phone"><a class="hello__phone-link" href="tel:+79218451206">+7 921 845 12 06</a></p>
+                <p class="hello__email">info@grossone.ru</p>
+            </div>
+            <div class="hello__right">
+                <h3 class="hello__title">Добро пожаловать в Grossone!</h3>
+                <p class="hello__paragraph">К созданию каждого изделия подходим индивидуально и ответственно,
+                    изготавливаем под точный размер и учитываем все пожелания. </p>
+                <p class="hello__paragraph">В производстве используем только цельную итальянскую, английскую и японскую
+                    кожу, надежную американскую фурнитуру из литой латуни и нержавеющей стали, ручной труд опытных
+                    мастеров.</p>
+                <p class="hello__paragraph">Искренне надеемся, что Вам понравится наша работа, мы приложим все усилия
+                    для создания изделий, которые будут радовать Вас или Ваших близких.</p>
+                <hr>
+                <div class="hello__telegram">
+                    <div class="telegram-text">
+                        <a href="" class="telegram-link">
+                            Telegram канал
+                        </a>
+                    </div>
+                    <div class="telegram-img">
+                        <a href="" class="telegram-link">
+                            <svg class="header__icon telegram-icon">
+                                <use xlink:href="../img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+
+
+</body>
+</html>
