@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./files/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./files/js/main.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    @@include('html/header.html', {})
+
+    <section class="hero">
+        <div class="hero__bg"></div>
+    </section>
+
+    <div class="quote">
+        <div class="container">
+            <p class="quote__text">
+                &laquo;Качество&nbsp;&mdash; это делать что-либо правильно, даже когда никто не&nbsp;смотрит.&raquo;
+                &mdash;
+                <span class="quote__author">Генри Форд</span>
+            </p>
+            <hr>
+        </div>
+    </div>
+
+    <div class="hello">
+        <div class="hello__container container">
+            <div class="hello__left">
+                <div class="hello__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/n9uCgUzfeRQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <p class="hello__phone"><a class="hello__phone-link" href="tel:+79218451206">+7 921 845 12 06</a></p>
+                <p class="hello__email">info@grossone.ru</p>
+            </div>
+            <div class="hello__right">
+                <h3 class="hello__title">Добро пожаловать в Grossone!</h3>
+                <p class="hello__paragraph">К созданию каждого изделия подходим индивидуально и ответственно,
+                    изготавливаем под точный размер и учитываем все пожелания. </p>
+                <p class="hello__paragraph">В производстве используем только цельную итальянскую, английскую и японскую
+                    кожу, надежную американскую фурнитуру из литой латуни и нержавеющей стали, ручной труд опытных
+                    мастеров.</p>
+                <p class="hello__paragraph">Искренне надеемся, что Вам понравится наша работа, мы приложим все усилия
+                    для создания изделий, которые будут радовать Вас или Ваших близких.</p>
+                <hr>
+                <div class="hello__telegram">
+                    <div class="telegram-text">
+                        <a href="" class="telegram-link">
+                            Telegram канал
+                        </a>
+                    </div>
+                    <div class="telegram-img">
+                        <a href="" class="telegram-link">
+                            <svg class="header__icon telegram-icon">
+                                <use xlink:href="./files/img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+
+    @@include('html/footer.html', {})
+</body>
+</html>
+
