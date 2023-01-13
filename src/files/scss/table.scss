@@ -1,0 +1,43 @@
+.main__container {
+    padding: 12px 65px;
+}
+
+.top {
+    text-align: center;
+}
+
+.submit-btn {
+    margin-left: 10px;
+}
+
+.add-form {
+    position: relative;
+    margin-top: 10px;
+}
+
+.add-option {
+    position: absolute;
+    text-align: right;
+    top: 10px;
+    right: 15px;
+
+    input[type="radio"] {
+        visibility: hidden;
+    }
+}
+
+
+
+.schedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.schedule__day-name {
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./files/css/table.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+        <div class="main__container">
+            <div class="top">
+                <h1 class="title">Расписание</h1>
+                <form class="choose-form" id="choose-form" method="post">
+                    <input type="radio" id="5days" name="days_amount" value="5">
+                    <label for="5days">
+                        5 дней
+                    </label>
+                    <input type="radio" id="6days" name="days_amount" value="6">
+                    <label for="6days">
+                        6 дней
+                    </label>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                    <button type="reset" class="clear-btn">Очистить</button>
+                </form>
+
+                <form class="add-form" id="add-form" method="post">
+                    <input class="add-input" name="subject" type="search" value="" placeholder="Add">
+                    <button type="submit" class="add-button"></button>
+
+                <div class="add-option">
+                    <div>
+                        <input type="radio" name="day" value="mon" id="mon">
+                        <label for="mon">Mon</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="day" value="tues" id="tues">
+                        <label for="tues">Tues</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="day" value="weds" id="weds">
+                        <label for="weds">Weds</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="day" value="thurs" id="thurs">
+                        <label for="thurs">Thurs</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="day" value="fri" id="fri">
+                        <label for="fri">Fri</label>
+                    </div>
+                    <div id="sat-btn">
+                        <input type="radio" name="day" value="sat" id="sat">
+                        <label for="sat">Sat</label>
+                    </div>
+                </div>
+
+                </form>
+            </div>
+
+            <div class="schedule">
+                <div class="schedule__mon">
+                    <p class="schedule__day-name">Понедельник</p>
+                    <ol></ol>
+                </div>
+                <div class="schedule__tues">
+                    <p class="schedule__day-name">Вторник</p>
+                    <ol></ol>
+                </div>
+                <div class="schedule__weds">
+                    <p class="schedule__day-name">Среда</p>
+                    <ol></ol>
+                </div>
+                <div class="schedule__thurs">
+                    <p class="schedule__day-name">Четверг</p>
+                    <ol></ol>
+                </div>
+                <div class="schedule__fri">
+                    <p class="schedule__day-name">Пятница</p>
+                    <ol></ol>
+                </div>
+                <div class="schedule__sat" id="sat-column">
+                    <p class="schedule__day-name">Суббота</p>
+                    <ol></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="files/js/table.js"></script>
+</body>
+</html>
